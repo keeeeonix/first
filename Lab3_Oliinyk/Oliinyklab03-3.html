@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Про себе</title>
+        <meta charset="UTF-8">
+        <Description></Description>
+        <Keywords></Keywords>
+    </head>
+    <body bgcolor="#ffffcc" text="#330066">
+        <h1><p align="center">Про себе</p></h1>
+        <img src="E://Web/image/icon.jpg" align="left">
+        <p align="justify">
+            <font face="times new roman">
+                Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam
+                voluptatem, <b>quia voluptas sit, aspernatur aut</b> odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed
+                quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                <i>consequatur?</i> Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos
+                ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores<u> et quas molestias excepturi sint</u>, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum
+                fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor
+                repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+                voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+            </font>
+        </p>
+        <h1><p align="center">Моє хобі</p></h1>
+        <h2><p align="center">Програмування</p></h2>
+        <code>
+            <font color="green">// Похідний клас "Круг"</font><br>
+            class Circle : public GeometricFigure {<br>
+            public:<br>
+            <font color="green">// Конструктор</font><br>
+                Circle(double centerX, double centerY, double rotationAngle, double scaleFactor, double radius)<br>
+                    : GeometricFigure(centerX, centerY, rotationAngle, scaleFactor), radius_(radius) {}<br>
+                    <br>
+                <font color="green">// Реалізація методів</font><br>
+                void show() const override {<br>
+                    std::cout << "Showing circle at (" << centerX_ << ", " << centerY_ << ") with radius " << radius_<br>
+                        << std::endl;<br>
+                }<br>
+                <br>
+                void hide() override {<br>
+                    std::cout << "Hiding circle." << std::endl;<br>
+                }<br>
+            
+                void rotate(double angle) override {<br>
+                    rotationAngle_ += angle;<br>
+                    std::cout << "Rotating circle by " << angle << " degrees." << std::endl;<br>
+                }<br>
+            
+                void move(double deltaX, double deltaY) override {<br>
+                    centerX_ += deltaX;<br>
+                    centerY_ += deltaY;<br>
+                    std::cout << "Moving circle to (" << centerX_ << ", " << centerY_ << ")." << std::endl;<br>
+                }<br>
+                <br>
+            private:<br>
+                double radius_;<br>
+            };<br>
+            </code>
+            <p align="right"><i><u>Студент групи 303-ТН Олійник<br>
+                І.В.</u></i></p>
+    </body>
+</html>
