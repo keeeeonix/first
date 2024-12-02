@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Інтерет-магазин</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Форма для замовлення</h2>
+        <form>
+            <pre>
+                Номер банківського рахунку: <input type="number" name="bankAccount">
+                Особистий номер: <input type="tel" name="phone" pattern="+380-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+380-12-345-67-89">
+                Оберіть товар:
+                <input type="checkbox" name="good1">товар1
+                <input type="checkbox" name="good2">товар2
+                <input type="checkbox" name="good3">товар3
+                <input type="checkbox" name="good4">товар4
+                <input type="checkbox" name="good5">товар5
+                Коментар до замовлення:
+            </pre>
+            <textarea name="comment" rows="6" cols="60" wrap="soft"></textarea>
+            <p>
+                <input type="checkbox" name="moneyLeft" value="">Отримати дані про залишки на рахунку<br>
+                <input type="checkbox" name="paymentList" value="">Отримати список станніх виплат<br>
+                <input type="reset" name="reset" value="Очистити форму">
+                <input type="submit" name="submit" value="Відправити дані">
+            </p>
+        </form>
+    </body>
+</html>
