@@ -1,0 +1,12 @@
+@import "variables";
+@import "mixins";
+@import "components/header";
+@import "components/movie-card";
+@import "components/footer";
+
+// Глобальні стилі
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+}
