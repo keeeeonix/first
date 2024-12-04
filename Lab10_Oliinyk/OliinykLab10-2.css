@@ -11,7 +11,7 @@ div.wrapper{
 div.grey{
     background: grey;
     height: 700px;
-    width: 384px;
+    width: 20%;
 }
 div.brown{
     background: brown;
@@ -26,7 +26,7 @@ div.blue{
 }
 div.yellow{
     background: yellow;
-    width: 45%;
+    width: 30%;
     height: 500px;
 }
 div.green{
@@ -43,22 +43,21 @@ div.red{
     width: 50%;
     height: 250px;
 }
-@media screen and (min-width: 950px) and (max-width: 1200px){
-    body{
-        background-color: black;
-    }
-    div.blue{
-        width: 79%;
-    }
-    div.cyan{
-        width: 24%;
-    }
-}
-@media screen and (min-width: 750px) and (max-width: 950px){
-    div.cyan{
-        width:25%;
+
+@media screen and (min-width: 750px) and (max-width: 980px){
+    div.flex{
+        flex-direction: column;
     }
     div.grey{
-        width: 24%;
+        width: 100%;
+    }
+    div.yellow{
+        width: 100%;
+    }
+    div.cyan{
+        width: 100%;
+    }
+    div.red{
+        width: 100%;
     }
 }

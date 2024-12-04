@@ -49,22 +49,32 @@ div.wrapper{
     width: 100%;
     height: 100vh;
 }
-@media screen and (min-width: 950px) and (max-width: 1200px){
-    body{
-        background-color: black;
+@media screen and (min-width: 750px) and (max-width: 980px){
+    div.brown{
+        float:none;
+    }
+    div.gray{
+        float: none;
+        width: 100%;
     }
     div.blue{
-        width: 79%;
+        float: none;
+        width: 100%;
+    }
+    div.yellow{
+        float: none;
+        width: 100%;
+    }
+    div.green{
+        float: none;
+        width: 100%;
+    }
+    div.red{
+        float: none;
+        width: 100%;
     }
     div.cyan{
-        width: 24%;
-    }
-}
-@media screen and (min-width: 750px) and (max-width: 950px){
-    div.cyan{
-        width:25%;
-    }
-    div.grey{
-        width: 24%;
+        float: none;
+        width: 100%;
     }
 }
